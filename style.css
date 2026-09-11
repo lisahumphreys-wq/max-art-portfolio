@@ -1,57 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background: #f7f5f2;
-    color: #333;
+    color: #2d2d2d;
 }
 
-header {
+/* TOP SECTION */
+
+.hero {
     text-align: center;
-    padding: 60px 20px 40px;
+    padding: 70px 20px 60px;
+    background: #eee9df;
 }
 
-header h1 {
-    font-size: 42px;
-    margin-bottom: 10px;
+.eyebrow {
+    margin: 0 0 12px;
+    font-size: 12px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    color: #777;
 }
 
-header p {
-    font-size: 18px;
+.hero h1 {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 64px;
+    font-weight: normal;
+}
+
+.intro {
+    margin: 20px auto 0;
+    font-family: Georgia, serif;
+    font-size: 22px;
+    font-style: italic;
     color: #666;
 }
 
-.gallery {
-    max-width: 1100px;
-    margin: auto;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
+
+/* GALLERY */
+
+.gallery-section {
+    padding: 60px 25px 70px;
 }
 
+.gallery-section > h2 {
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 42px;
+    font-weight: normal;
+    margin: 0 0 10px;
+}
+
+.gallery-intro {
+    text-align: center;
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 45px;
+}
+
+.gallery {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+
+/* ARTWORK CARDS */
+
 .artwork {
-    background: white;
-    padding: 15px;
-    border-radius: 8px;
+    text-align: center;
 }
 
 .artwork img {
     width: 100%;
+    height: 310px;
+    object-fit: cover;
+    background: white;
+    padding: 12px;
+    border: 10px solid #222;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.18);
     display: block;
-    border-radius: 5px;
 }
 
-.artwork h2 {
-    font-size: 20px;
-    margin-bottom: 5px;
+.artwork h3 {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    font-weight: normal;
+    margin: 15px 0 8px;
 }
 
-.artwork p {
-    color: #777;
+
+/* PRICE */
+
+.price {
+    display: inline-block;
+    background: #292d2f;
+    color: white;
+    padding: 9px 18px;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
-footer {
-    text-align: center;
-    padding: 50px 20px;
-    color: #777;
+.price span {
+    font-size: 14px;
+    font-weight: normal;
+    margin-left: 4px;
 }
+
+
+/* VIEW LARGER BUTTON */
+
+.artwork a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 9px 18
